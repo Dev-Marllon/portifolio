@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Marllon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="topo">
+    <h1>Olá, eu sou o Marllon!</h1>
+    <p>Sou estudante de Análise e Desenvolvimento de Sistemas e Desenvolvimento de Sistemas, apaixonado por tecnologia e programação.</p>
+
+    <p>Atualmente, estou desenvolvendo minhas habilidades em Java, Spring Boot, SQL, MySQL, HTML, CSS e JavaScript, criando projetos práticos para aprimorar meus conhecimentos.</p>
+    
+    <p>Meu objetivo é me tornar desenvolvedor Java Back-end e construir soluções que resolvam problemas reais.</p>
+
+    <!--núcleo holográfico -->
+    <div class="nucleo-holografico">
+
+        <div class="base-holografica"></div>
+
+        <!--órbita do núcleo-->
+        <div class="orbita orbita-externa"></div>
+        <div class="orbita orbita-interna"></div>
+
+
+
+        <!--símbolo central-->
+        <div class="nucleo-centro">
+            &lt;/&gt;
+        </div>
+
+        <!--tecnologias ao redor-->
+        <span class="selo selo-java">Java</span>
+        <span class="selo selo-spring">Spring Boot</span>
+        <span class="selo selo-mysql">MySQL</span>
+        <span class="selo selo-html">HTML</span>
+
+    </div>
+
+    <button id="btn-apresentacao" type="button">
+        Conheça meu objetivo
+    </button>
+
+    <p id="mensagem-objetivo" hidden>
+        Estou construindo minha trajetória na área de tecnologia,
+        com foco em desenvolvimento Back-end utilizando Java e Spring Boot.
+
+    </p>
+</header>
+
+<nav aria-label="Menu prinipal">
+    <ul>
+
+        <li><a href="#sobre">Sobre</a></li>
+        <li> <a href="#projetos">Meus projetos</a></li>
+        <li> <a href="#github">Meu GitHub</a></li>
+
+    </ul>
+</nav>
+<main>
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+            Sou Marllon Alves, moro no Rio de Janeiro e sou apaixonado por tecnologia.
+            Atualmente, estudo Análise e Desenvolvimento de Sistemas(UNISUAM) e Curso Técnico em Desenvolvimento de Sistema(Faetec),
+            Tenho interesse em tecnologia e desenvolvimento de software.
+            
+
+        </p>
+
+        <p>
+            Gosto de aprender na prática, desenvolver projetos e evoluir constantemente,
+            com foco em me tornar um desenvolvedor.
+
+        </p>
+    </section>
+
+    <section id="tecnologias">
+        <h2>Tecnologias que estou estudando</h2>
+
+        <div class="lista-tecnologias">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+            <span>Git</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus projetos</h2> 
+        
+        <label for="busca-projetos">Pesquisar projetos:</label>
+
+        <input
+           type="search"
+           id="busca-projetos"
+           placeholder="Digite o nome ou tecnologia..."
+        >
+        
+        <p id="mensagem-sem-resultados" hidden>
+            Nenhum projeto encontrado.
+
+        </p>    
+
+        <div class="lista-projetos">
+
+        <article>
+            <h3>Sistema Bancário em Java</h3>
+            <p>Projeto para praticar Java e banco de dados.
+               utilizando java com integração ao MySQL.
+            </p>
+
+            <a href="https://github.com/Dev-Marllon/Sistema_Bancario"
+               target="_blank"
+               rel="noopener noreferrer">
+                 Ver o código do projeto
+            </a>
+        </article>
+        <article>
+             <h3>Sistema de Cadastro de Cliente</h3>
+
+             <p>
+                Projeto desenvolvido em Java com integração ao MySQL, 
+                utilizando as operações CRUD para cadastrar, consultar,
+                atualizar e excluir clientes.
+             </p>
+
+             <a href="https://github.com/Dev-Marllon/SistemaClientes"
+                target="_blank"
+                rel="noopener noreferrer">
+                  Ver o código do projeto
+            </a>
+         
+        </article>
+        </div>
+    </section>
+
+    <section id="github">
+        <h2>Meu GitHub</h2>
+        <p>Conheça meus projetos e meu código.</p>
+        
+        <a href="https://github.com/Dev-Marllon"
+        target="_blank"
+        rel="noopener noreferrer">
+         Visitar meu GitHub
+    </a>
+           
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Marllon. Desenvolvido com HTML e CSS.</p>
+    <a href="#topo">Voltar ao topo </a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
