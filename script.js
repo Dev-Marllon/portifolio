@@ -2,9 +2,17 @@ console.log("Ola! Meu primeiro código JavaScript.");
 
 const botao = document.getElementById("btn-apresentacao");
 
+const modalObjetivo = document.getElementById("modal-objetivo");
+
+const fecharModal = document.getElementById("fechar-modal");
+
 botao.addEventListener("click", function () {
-    alert("Meu objetivo é me tornar desenvolvedor java Back-end!");
-    
+    modalObjetivo.showModal();
+});
+
+fecharModal.addEventListener("click", function() {
+    modalObjetivo.close();
+
 });
 
 // pesquisa de projetos 
