@@ -211,42 +211,6 @@ section h2 {
 
 }
 
-/* Botão da seção GitHub*/
-#github a {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 8px 12px;
-    color: #38bdf8;
-    background-color: #0f172a;
-    border: 1px solid #38bdf8;
-    border-radius: 8px; 
-    text-decoration: none;
-    transition: backgroud-color 0.25s ease,
-                color 0.25s ease;
-}
-
-/* Efeito ao passar o mouse*/
-#github a:hover {
-    color: #0f172a;
-    background-color: #38bdf8;
-}
-
-/* Cartão d                                                                                     a seção GitHub */
-#github {
-    background-color: #1e293b;
-    padding: 25px;
-    border-radius: 16px;
-    border: 1px solid #334155;
-    border-left: 4px solid #38bdf8;
-}
-
-/* Destaque ao navegar pelos links com o teclado */
-article a:focus-visible,
-#github a:focus-visible {
-    outline: 2px solid white;
-    outline-offset: 4px;
-}
-
 /*Ajusta a posição das seções ao navegar pelo menu */
 section {
     scroll-margin-top: 80px;
@@ -705,8 +669,8 @@ footer a:hover{
 
 /*fotografia*/
 .foto-perfil {
-    width: 260px;
-    height: 340px;
+    width: 230px;
+    height: 300px;
     object-fit: cover;
     border-radius: 14px;
     border: 1px solid #38bdf8;
@@ -729,6 +693,7 @@ footer a:hover{
 .texto-modal p {
     line-height: 1.7;
     color: #cbd5e1;
+    font-size: 16px;
 }
 
 /* Botão de fechar a apresentação */
@@ -760,4 +725,43 @@ footer a:hover{
     background: #38bdf8;
     color: #0f172a;
     box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+/*seçao contatos */
+#contato {
+    text-align: center;
+    padding: 30px;
+}
+
+/* organizaçao dos contatos*/
+.links-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/*aparencia dos links de contato*/
+.links-contato a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    color: #38bdf8;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/*tamanho dos icones*/
+.links-contato i {
+    font-size: 36px;
+}
+
+/*efeito ao passar o mouse*/
+.links-contato a:hover {
+    color: #7dd3fc;
+    transform: translateY(-5px);
+    text-shadow: 0 0 15px rgb(56, 189, 248, 0.8);
 }
