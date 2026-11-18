@@ -39,7 +39,6 @@ Sistema desenvolvido em Java com integração ao MySQL, utilizando operações C
 
 ## 📬 Contato
 
-- **GitHub:** [@Dev-Marllon](https://github.com/Dev-Marllon)
 - **E-mail:** Marllon.dev26@outlook.com
 
 ---
