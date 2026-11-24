@@ -42,3 +42,56 @@ campoBusca.addEventListener("input", function () {
     });
     mensagemSemResultados.hidden = projetosVisiveis > 0;
 });
+
+// efeito maquina de escrever
+const frases = [
+    "Transformando ideias em soluções",
+    "Evoluindo e aprendendo todos os dias",
+    "Sempre aprendendo novas tecnologias",
+    "Contruindo o futuro 🚀"
+
+];
+
+const elementoTexto = document.getElementById("texto-digitado");
+
+let indiceFrase = 0;
+let indiceLetra = 0;
+let apagando = false;
+
+function maquinaDeEscrever() {
+    
+    const fraseAtual = frases[indiceFrase];
+
+    if (!apagando) {
+
+        elementoTexto.textContent =
+            fraseAtual.substring(0, indiceLetra + 1);
+
+        indiceLetra++;    
+
+
+        if (indiceLetra === fraseAtual.length) {
+            apagando = true;
+            setTimeout(maquinaDeEscrever, 1800);
+            return;
+        }
+
+    } else {
+        
+        elementoTexto.textContent =
+            fraseAtual.substring(0, indiceLetra - 1);
+
+        indiceLetra--;
+        
+        if (indiceLetra === 0) {
+            apagando = false;
+            indiceFrase = (indiceFrase + 1) % frases.length;
+        }
+
+    }
+    
+    setTimeout(maquinaDeEscrever, apagando ? 45 : 85);
+  
+}
+
+maquinaDeEscrever();
